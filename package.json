@@ -1,0 +1,25 @@
+{
+  "name": "fineAns",
+  "version": "1.0.0",
+  "description": "some usable financial functions.",
+  "main": "index.js",
+  "repository": "git@github.com:yaswanthsvist/fineAns.git",
+  "author": "yaswanthsvist",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "compile": "./node_modules/.bin/babel  ./src --experimental --source-maps-inline -d ./dist",
+    "dev": "npm run compile && npm run start"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-es2015-destructuring": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "colors": "^1.2.3",
+    "date-and-time": "^0.6.2",
+    "flow-bin": "^0.71.0",
+    "mathjs": "^4.2.1"
+  }
+}
